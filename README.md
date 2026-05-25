@@ -1,34 +1,38 @@
 # TheEngSpace
 
-TheEngSpace is a personal project focused on learning and developing tools for **Systems Engineering** using Python.
+TheEngSpace is a systems engineering software project focused on requirements management, traceability, and future AI-assisted engineering analysis.
 
-## 🎯 Objective
+## Current MVP Status
 
-Build a simple system to manage and trace engineering requirements, with future expansion into MBSE concepts, automation, and aerospace applications.
+Initial backend structure created using:
 
-## 🛠️ Initial Features
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
 
-* Load and display requirements from Excel
-* Basic requirements management structure
-* Foundation for traceability system
+## Features Implemented
 
-## 🧠 Technologies
+- FastAPI server running
+- SQLite database connected
+- Requirement model created
+- Initial API routes implemented
+- Swagger/OpenAPI documentation enabled
 
-* Python
-* Pandas
-* Excel (as initial data source)
+## Current Structure
 
-## 🚀 Future Improvements
+theengspace/
+│
+├── requirements/
+├── main.py
+├── database.py
+├── models.py
+└── theengspace.db
 
-* Requirements traceability (REQ → subsystem → test)
-* Dashboard interface (Streamlit or web app)
-* Data visualization and reporting
-* MBSE-inspired architecture modeling
+## Next Steps
 
-## 📌 Status
-
-Early development stage (MVP)
-
-## 👨‍💻 Author
-
-Gregori Maia
+- Real requirement creation
+- Automatic requirement IDs
+- Requirement status management
+- Test traceability
+- Simple web interface
