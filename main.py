@@ -1,12 +1,12 @@
-from fastapi import FastAPI
-from database import engine
-from models import Base
-from requirements.requirement_routes import router
+﻿from fastapi import FastAPI
+from app.database import engine
+from app.models import Base
+from app.routes.auth import router as auth_router
 
 app = FastAPI()
 Base.metadata.create_all(bind=engine)
-app.include_router(router)
+app.include_router(auth_router)
 
-@app.get("/")
+@app.get('/')
 def home():
-    return {"message": "TheEngSpace API is running"}
+    return {'message': 'TheEngSpace API is running'}
